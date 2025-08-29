@@ -58,7 +58,7 @@ const nextConfig = {
     return []
   },
 
-  // Rewrites for API proxy in development
+  // Rewrites for API proxy
   async rewrites() {
     return [
       {

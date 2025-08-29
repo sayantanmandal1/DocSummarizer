@@ -5,7 +5,7 @@ import axios from 'axios'
 import { History, FileText, Calendar, Eye, Loader2, AlertCircle, Brain, Hash } from 'lucide-react'
 
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-backend-url.com' 
+  ? '/api' 
   : 'http://localhost:8001'
 
 export default function HistorySection({ onViewInsight, refreshTrigger }) {

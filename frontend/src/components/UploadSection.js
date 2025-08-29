@@ -5,7 +5,7 @@ import axios from 'axios'
 import { Upload, FileText, Loader2, AlertCircle } from 'lucide-react'
 
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://your-backend-url.com' 
+  ? '/api' 
   : 'http://localhost:8001'
 
 export default function UploadSection({ onUploadSuccess }) {
