@@ -2,32 +2,34 @@
 const nextConfig = {
   // Enable standalone output for Docker
   output: 'standalone',
-  
+
+  // Set the correct workspace root to avoid lockfile warnings
+  outputFileTracingRoot: require('path').join(__dirname, '../'),
+
   // Optimize images
   images: {
     unoptimized: true,
   },
-  
+
   // Environment variables
   env: {
     CUSTOM_KEY: 'my-value',
   },
-  
+
   // Server external packages (moved from experimental)
   serverExternalPackages: [],
-  
+
   // Experimental features
   experimental: {
     // Add any experimental features here
   },
-  
-  // Turbopack configuration (replaces webpack in Next.js 15)
-  turbo: {
-    rules: {
-      // Add any custom Turbopack rules here
-    },
+
+  // Webpack configuration (if needed)
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    // Add any custom webpack configuration here
+    return config
   },
-  
+
   // Headers for security
   async headers() {
     return [
@@ -50,12 +52,12 @@ const nextConfig = {
       },
     ]
   },
-  
+
   // Redirects
   async redirects() {
     return []
   },
-  
+
   // Rewrites for API proxy in development
   async rewrites() {
     return [
