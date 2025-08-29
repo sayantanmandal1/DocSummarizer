@@ -8,4 +8,4 @@ fastapi-cors==0.0.6
 sqlalchemy==2.0.23
 aiosqlite==0.19.0
 pydantic==2.5.0
-sarvamai==1.0.0
+sarvamai
