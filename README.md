@@ -71,7 +71,7 @@ docker-compose up --build
 4. **Access the application**:
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:8001
-   - API Documentation: http://localhost:8001/docs
+   - API Documentation: https://docsummarizer.onrender.com/docs
 
 ### Option 2: Local Development
 
@@ -286,7 +286,7 @@ cd frontend
 npm test
 
 # API testing
-curl -X POST -F "file=@sample.pdf" http://localhost:8001/upload-resume
+curl -X POST -F "file=@sample.pdf" https://docsummarizer.onrender.com/upload-resume
 ```
 
 ## 🚀 Production Deployment
@@ -338,10 +338,10 @@ npm start
 ### Debug Commands
 ```bash
 # Check API health
-curl http://localhost:8001/
+curl https://docsummarizer.onrender.com/
 
 # Test AI integration
-curl http://localhost:8001/test-ai
+curl https://docsummarizer.onrender.com/test-ai
 
 # View logs
 docker-compose logs backend

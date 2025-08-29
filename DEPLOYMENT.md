@@ -101,8 +101,8 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
 
 ### Health Checks
 - Frontend: `http://localhost:3000/`
-- Backend: `http://localhost:8001/`
-- API Docs: `http://localhost:8001/docs`
+- Backend: `https://docsummarizer.onrender.com/`
+- API Docs: `https://docsummarizer.onrender.com/docs`
 
 ### Logging
 ```bash

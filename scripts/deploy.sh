@@ -43,7 +43,7 @@ else
     exit 1
 fi
 
-if curl -f http://localhost:8001/ > /dev/null 2>&1; then
+if curl -f https://docsummarizer.onrender.com/ > /dev/null 2>&1; then
     echo "✅ Backend is healthy"
 else
     echo "❌ Backend health check failed"
@@ -55,7 +55,7 @@ echo ""
 echo "🌐 Application is available at:"
 echo "   Frontend: http://localhost:3000"
 echo "   Backend API: http://localhost:8001"
-echo "   API Documentation: http://localhost:8001/docs"
+echo "   API Documentation: https://docsummarizer.onrender.com/docs"
 echo ""
 echo "📊 Monitor with:"
 echo "   docker-compose -f docker-compose.prod.yml logs -f"

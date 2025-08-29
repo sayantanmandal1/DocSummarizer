@@ -63,7 +63,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://localhost:8001/:path*',
+        destination: 'https://docsummarizer.onrender.com/:path*',
       },
     ]
   },

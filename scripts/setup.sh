@@ -51,7 +51,7 @@ if docker-compose ps | grep -q "Up"; then
     echo "🌐 Access the application:"
     echo "   Frontend: http://localhost:3000"
     echo "   Backend API: http://localhost:8001"
-    echo "   API Docs: http://localhost:8001/docs"
+    echo "   API Docs: https://docsummarizer.onrender.com/docs"
     echo ""
     echo "📚 Next steps:"
     echo "   1. Edit backend/.env and add your SARVAM_API_KEY"
