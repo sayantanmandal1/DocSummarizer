@@ -89,7 +89,7 @@ export default function InsightDisplay({ insight }) {
                 <h4 className="font-semibold text-orange-800">Fallback Analysis</h4>
               </div>
               <p className="text-orange-700 text-sm">
-                AI service was unavailable, so we've provided a word frequency analysis 
+                AI service was unavailable, so we&apos;ve provided a word frequency analysis 
                 of your document instead.
               </p>
             </div>

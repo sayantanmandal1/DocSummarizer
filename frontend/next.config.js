@@ -13,16 +13,19 @@ const nextConfig = {
     CUSTOM_KEY: 'my-value',
   },
   
+  // Server external packages (moved from experimental)
+  serverExternalPackages: [],
+  
   // Experimental features
   experimental: {
-    // Enable server components
-    serverComponentsExternalPackages: [],
+    // Add any experimental features here
   },
   
-  // Webpack configuration
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-    // Custom webpack config
-    return config
+  // Turbopack configuration (replaces webpack in Next.js 15)
+  turbo: {
+    rules: {
+      // Add any custom Turbopack rules here
+    },
   },
   
   // Headers for security

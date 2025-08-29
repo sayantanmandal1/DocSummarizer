@@ -4,7 +4,9 @@ import { useState, useRef } from 'react'
 import axios from 'axios'
 import { Upload, FileText, Loader2, AlertCircle } from 'lucide-react'
 
-const API_BASE_URL = 'http://localhost:8001'
+const API_BASE_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://your-backend-url.com' 
+  : 'http://localhost:8001'
 
 export default function UploadSection({ onUploadSuccess }) {
   const [file, setFile] = useState(null)
